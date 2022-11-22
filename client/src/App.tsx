@@ -5,6 +5,10 @@ import './App.css';
 function App() {
   const [count, setCount] = useState(0);
 
+  const sayHello = () => {
+    alert('hello there');
+  }
+
   return (
     <div className="App">
       <div>
@@ -16,6 +20,7 @@ function App() {
         </a>
       </div>
       <h1>Vite + React</h1>
+      <button onClick={sayHello}>Hello</button>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>count is {count}</button>
         <p>
